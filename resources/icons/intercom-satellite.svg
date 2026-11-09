@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="14 14 80 80" width="64" height="64">
+  <!-- The Android app's launcher icon: its 72 visible units of the 108 grid, on a fixed blue
+       as the desktop has no wallpaper colours. -->
+  <rect x="18" y="18" width="72" height="72" rx="18" fill="#1565c0"/>
+  <path d="M38,48v12M46,41v26M54,36v36M62,44v20M70,50v8"
+        fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+</svg>

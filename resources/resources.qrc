@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/intercom-satellite.svg</file>
+        <file>icons/add.svg</file>
+        <file>icons/arrow_drop_down.svg</file>
+        <file>icons/call.svg</file>
+        <file>icons/call_end.svg</file>
+        <file>icons/github.svg</file>
+        <file>icons/history.svg</file>
+        <file>icons/info.svg</file>
+        <file>icons/toggle_off.svg</file>
+        <file>icons/toggle_on.svg</file>
+        <file>icons/mic.svg</file>
+        <file>icons/north_east.svg</file>
+        <file>icons/person.svg</file>
+        <file>icons/south_west.svg</file>
+        <file>icons/power.svg</file>
+        <file>icons/more_vert.svg</file>
+        <file>icons/refresh.svg</file>
+        <file>icons/settings.svg</file>
+        <file>icons/touch_app.svg</file>
+        <file>icons/videocam.svg</file>
+        <file>icons/visibility.svg</file>
+        <file>icons/volume_up.svg</file>
+        <file>icons/room_home.svg</file>
+        <file>icons/room_living.svg</file>
+        <file>icons/room_kitchen.svg</file>
+        <file>icons/room_dining.svg</file>
+        <file>icons/room_bedroom.svg</file>
+        <file>icons/room_kids.svg</file>
+        <file>icons/room_office.svg</file>
+        <file>icons/room_bath.svg</file>
+        <file>icons/room_entrance.svg</file>
+        <file>icons/room_garage.svg</file>
+        <file>icons/room_garden.svg</file>
+        <file>icons/room_stairs.svg</file>
+    </qresource>
+</RCC>

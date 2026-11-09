@@ -1,0 +1,31 @@
+Source: intercom-satellite
+Section: net
+Priority: optional
+Maintainer: Peter Meiser <meiser@gmx-topmail.de>
+Build-Depends: debhelper-compat (= 13),
+               cmake,
+               pkgconf,
+               qt6-base-dev,
+               qt6-multimedia-dev,
+               qt6-websockets-dev,
+               qt6-tools-dev,
+               qt6-l10n-tools,
+               libavcodec-dev,
+               libavutil-dev,
+               libswscale-dev,
+               libssl-dev
+Standards-Version: 4.7.0
+Homepage: https://github.com/meiser79/intercom-satellite-desktop
+Rules-Requires-Root: no
+
+Package: intercom-satellite
+Architecture: any
+# The SVG icons need a plugin the libraries don't pull in; sound goes through PulseAudio or PipeWire,
+# and Qt's own translations give the standard buttons, like OK and Cancel, their German.
+Depends: ${shlibs:Depends}, ${misc:Depends}, qt6-svg-plugins
+Recommends: pipewire-pulse | pulseaudio, qt6-translations-l10n
+Description: Intercom for Kiosk Satellite kiosks and phones
+ The Intercom Satellite Desktop App turns a Linux computer into an intercom
+ for Kiosk Satellite kiosks. It also works with the Intercom Satellite app on
+ Android phones: calls, video calls and announcements on the local network,
+ optionally encrypted with TLS.

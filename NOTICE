@@ -1,0 +1,17 @@
+Intercom Satellite Desktop App
+Copyright 2026 Peter Meiser
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The Desktop App speaks the intercom protocol of Kiosk Satellite and of Intercom Satellite for
+Android (https://github.com/meiser79/intercom-satellite).
+
+It uses Qt 6 (https://www.qt.io), licensed under the GNU LGPL v3, and FFmpeg's libavcodec,
+libavutil and libswscale (https://ffmpeg.org), licensed under the GNU LGPL v2.1 or later; a
+distribution build of FFmpeg may be licensed under the GNU GPL. H.264 encoding uses the encoder
+FFmpeg provides, usually x264 (GNU GPL v2 or later). Its TLS certificate is made with OpenSSL's
+libcrypto (https://www.openssl.org), licensed under the Apache License 2.0.
+
+The button icons are Material Icons by Google (https://fonts.google.com/icons), licensed under
+the Apache License 2.0, the same as in the Android app. The room icons are Material Design Icons by
+Pictogrammers (https://pictogrammers.com/library/mdi/), also licensed under the Apache License 2.0.

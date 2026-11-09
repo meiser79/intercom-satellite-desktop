@@ -1,0 +1,83 @@
+.TH INTERCOM-SATELLITE 1 "November 2026" "intercom-satellite 1.0.0" "User Commands"
+.SH NAME
+intercom-satellite \- intercom for Kiosk Satellite kiosks and phones
+.SH SYNOPSIS
+.B intercom-satellite
+.RI [ options ]
+.SH DESCRIPTION
+The Intercom Satellite Desktop App turns a Linux computer into an intercom for
+Kiosk Satellite kiosks. It also works with the Intercom Satellite app on Android
+phones: calls, video calls and announcements on the local network, optionally
+encrypted with TLS.
+It is an independent companion and not affiliated with Kiosk Satellite.
+.PP
+The window lists the kiosks found on the network over mDNS, or added by
+address. Closing or minimizing the window keeps the intercom running in the
+system tray, where
+.B Quit
+ends it.
+.PP
+Before the first call, enter the intercom key in
+.BR Settings :
+the same key as on the kiosks, under Kiosk Satellite \(-> Intercom.
+.SH OPTIONS
+.TP
+.BI \-\-config " file"
+Use
+.I file
+for the settings instead of the default one (see
+.BR FILES ).
+One instance runs per settings file. Starting it again with the same file
+brings up the running instance's window instead, and the other options are then
+ignored. Separate files let several instances run side by side, each with its
+own name and port.
+.TP
+.B \-\-no\-mdns
+Neither announce this computer on the network nor look for kiosks. Kiosks can
+still be added by address.
+.TP
+.BI \-\-call " address"
+Call a kiosk once it is reachable.
+.I address
+is its host, its host and port as
+.IR host : port ,
+or its name.
+.TP
+.B \-\-video
+With
+.B \-\-call
+or
+.BR \-\-auto\-answer :
+with the camera on.
+.TP
+.B \-\-auto\-answer
+Answer incoming calls after a second.
+.TP
+.BR \-h ", " \-\-help
+Show the options and exit.
+.TP
+.BR \-v ", " \-\-version
+Show the version and exit.
+.SH NETWORK
+Calls come in on TCP port 2324, or the port set in
+.BR Settings .
+Kiosks are found over mDNS on UDP port 5353. With TLS on, calls come in
+encrypted on the port after the plain one, 2325 by default. A firewall has to
+let these ports in.
+.SH FILES
+.TP
+.I $XDG_CONFIG_HOME/intercom-satellite/settings.conf
+The settings: name, intercom key, port, the kiosks added by address, their
+names and symbols, and confirmed TLS certificates.
+.I $XDG_CONFIG_HOME
+is
+.I ~/.config
+unless set otherwise.
+.SH ENVIRONMENT
+.TP
+.BR LANG ", " LANGUAGE
+Choose the language. German and English are included.
+.SH SEE ALSO
+https://github.com/meiser79/intercom-satellite-desktop
+.SH AUTHOR
+Peter Meiser

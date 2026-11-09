@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Intercom Satellite
+GenericName=Intercom
+GenericName[de]=Gegensprechanlage
+Comment=Calls and announcements with Kiosk Satellite kiosks
+Comment[de]=Anrufe und Durchsagen mit Kiosk-Satellite-Kiosks
+Exec=intercom-satellite
+Icon=intercom-satellite
+Categories=Network;Telephony;
+Keywords=intercom;kiosk;doorbell;call;
+StartupNotify=true
